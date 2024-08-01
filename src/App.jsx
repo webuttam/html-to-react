@@ -1,0 +1,21 @@
+import React from 'react'
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap'
+import './App.css'
+import Header from './components/main/Header'
+import Home from './components/home/Home'
+import Footer from './components/main/Footer'
+
+function App() {
+
+  return (
+    <>
+      <Header />
+      <Home />
+      <Footer />
+    </>
+  )
+}
+
+export default App
