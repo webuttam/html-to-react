@@ -865,6 +865,17 @@ input[type="submit"]{cursor: pointer; border: 0px; outline: none;}
 
 }
 @media only screen and (max-width:767px){
+	.css-1160xiw-MuiPaper-root-MuiDrawer-paper{background: #000 !important;}
+	.css-1160xiw-MuiPaper-root-MuiDrawer-paper ul li a {
+		display: block;
+		color: #fff;
+		padding: 8px 15px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+	.css-1160xiw-MuiPaper-root-MuiDrawer-paper ul li a:focus,
+	.css-1160xiw-MuiPaper-root-MuiDrawer-paper ul li a:hover{color: #a67d36;}
+	.form-box{padding: 20px;}
+	.form-box .heading{margin-bottom: 20px;}
 	.hdr-menu{display: block;width: auto;}
 	.hdr-menu>ul, .hdr-menu.hdr-menu-left{display: none;}
 	.bnr-info .bnr-content h1{font-size: 30px;line-height: 35px;}
