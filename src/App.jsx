@@ -15,26 +15,6 @@ function App() {
       element: <><Header /><Home /></>,
     },
     {
-      path: "/",
-      element: '',
-    },
-    {
-      path: "/",
-      element: '',
-    },
-    {
-      path: "/",
-      element: '',
-    },
-    {
-      path: "/",
-      element: '',
-    },
-    {
-      path: "/",
-      element: '',
-    },
-    {
       path: "/contact",
       element:<><Header /><Contact /></>,
     },

@@ -424,7 +424,6 @@ input[type="submit"]{cursor: pointer; border: 0px; outline: none;}
 .hdr-menu ul li{display: inline-block;margin-left: 40px;}
 .hdr-menu ul li:first-child{margin-left: 0;}
 .hdr-menu ul li a{color: #fff;display: block;}
-.hdr-menu ul li:last-child a.menu-active{background: #a67d36;color: #fff;}
 .hdr-menu-right ul li:last-child a{background: #fff;color: #000;padding: 13px 32px;border-radius: 100px;}
 .hdr-menu-right ul li:last-child a:hover{background: #E99D52;color: #fff;}
 /* .hdr-menu {
@@ -702,6 +701,8 @@ input[type="submit"]{cursor: pointer; border: 0px; outline: none;}
 .form-btn button[type="submit"]:hover{background: #333;color: #fff;}
 .form-btn button[type="submit"]:focus{outline: none;box-shadow: none;}
 .form-btn button[type="submit"] svg {margin-left: 25px;}
+.form-msg{text-align: center;}
+.form-msg p{color: #a67d36;font-size: 18px;}
 
 
 

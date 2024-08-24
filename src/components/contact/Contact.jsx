@@ -44,7 +44,11 @@ export default function Fetch() {
   }
 
   if (submitted) {
-    return <p>We've received your message, thank you for contacting us!</p>;
+    return <div className="form-msg"><div className="container">
+        <p>We've received your message, thank you for contacting us!</p>
+      </div>
+    </div>
+    
   }
 
   return (
