@@ -3,6 +3,7 @@ import Headerlogo from '../../assets/images/site-logo.png'
 import Drawer from '@mui/material/Drawer'
 import Box from '@mui/material/Box'
 import MenuIcon from '@mui/icons-material/Menu';
+import {NavLink} from 'react-router-dom'
 
 
 const Header = () => {
@@ -66,7 +67,7 @@ const Header = () => {
     },
     {
       title: "Contact Us",
-      path: "/"
+      path: "/contact"
     },
   ];
   return (
@@ -77,7 +78,7 @@ const Header = () => {
           <div className="hdr-menu hdr-menu-left">
             <ul>
               {LeftMenulist.map((option, index) =>(
-                  <li key={index}><a href="#">{option.title}</a></li>
+                  <li key={index}><NavLink className={(e) => {return e.isActive?"menu-active": ""}}>{option.title}</NavLink></li>
               ))}
             </ul>
           </div>
@@ -87,7 +88,7 @@ const Header = () => {
           <div className="hdr-menu hdr-menu-right">
             <ul>
               {RightMenulist.map((Rightmenu, index2)=>(
-                <li key={index2}><a href="#">{Rightmenu.title}</a></li>
+                <li key={index2}><NavLink className={(e) => {return e.isActive?"menu-active": ""}}>{Rightmenu.title}</NavLink></li>
               ))} 
             </ul>
             <div className='mobile-menu'>
@@ -96,7 +97,7 @@ const Header = () => {
                 <Box sx={{width:250}} onClick={() => setMainMenu(false)}>
                   <ul>
                     {MobileMenu.map((mobileMenu, mobileKey)=>(
-                      <li key={mobileKey}><a href="#">{mobileMenu.title}</a></li>
+                      <li key={mobileKey}><NavLink className={(e) => {return e.isActive?"menu-active": ""}}>{mobileMenu.title}</NavLink></li>
                     ))} 
                   </ul>
                 </Box>
