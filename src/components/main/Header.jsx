@@ -43,31 +43,31 @@ const Header = () => {
   const MobileMenu = [
     {
       title:"Home",
-      path: "/"
+      to: "/"
     },
     {
       title: "Science is God",
-      path: "/"
+      to: "/"
     },
     {
       title: "History",
-      path: "/"
+      to: "/"
     },
     {
       title:"Spiritual Blogs",
-      path: "/"
+      to: "/"
     },
     {
       title: "ULC Case Law",
-      path: "/"
+      to: "/"
     },
     {
       title: "Campaigns",
-      path: "/"
+      to: "/"
     },
     {
       title: "Contact Us",
-      path: "/contact"
+      to: "/contact"
     },
   ];
   return (
