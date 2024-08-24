@@ -1,3 +1,4 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import React, { useState } from 'react'
 import Headerlogo from '../../assets/images/site-logo.png'
 import Drawer from '@mui/material/Drawer'
@@ -8,68 +9,37 @@ import {NavLink} from 'react-router-dom'
 
 const Header = () => {
   const [Mainmenu, setMainMenu] = useState(false)
-  const LeftMenulist = [
+  const router = createBrowserRouter([
     {
-      title:"Home",
-      path: "/"
+      path: "/",
+      element: <Home />,
     },
     {
-      title: "Science is God",
-      path: "/"
+      path: "/",
+      element: "#",
     },
     {
-      title: "History",
-      path: "/"
-    },
-  ];
-  const RightMenulist = [
-    {
-      title:"Spiritual Blogs",
-      path: "/"
+      path: "/",
+      element: "#",
     },
     {
-      title: "ULC Case Law",
-      path: "/"
+      path: "/",
+      element: "#",
     },
     {
-      title: "Campaigns",
-      path: "/"
+      path: "/",
+      element: "#",
     },
     {
-      title: "Contact Us",
-      path: "/"
-    },
-  ];
-  const MobileMenu = [
-    {
-      title:"Home",
-      path: "/"
+      path: "/",
+      element: "#",
     },
     {
-      title: "Science is God",
-      path: "/"
+      path: "/",
+      element:<Contact />,
     },
-    {
-      title: "History",
-      path: "/"
-    },
-    {
-      title:"Spiritual Blogs",
-      path: "/"
-    },
-    {
-      title: "ULC Case Law",
-      path: "/"
-    },
-    {
-      title: "Campaigns",
-      path: "/"
-    },
-    {
-      title: "Contact Us",
-      path: "/contact"
-    },
-  ];
+    
+  ]);
   return (
     <>
     <header className="site-header">
@@ -77,9 +47,9 @@ const Header = () => {
         <div className="d-flex">
           <div className="hdr-menu hdr-menu-left">
             <ul>
-              {LeftMenulist.map((option, index) =>(
-                  <li key={index}><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to={option.path}>{option.title}</NavLink></li>
-              ))}
+              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Home</NavLink></li>
+              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>Science is God</NavLink></li>
+              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>History</NavLink></li>
             </ul>
           </div>
           <div className="hdr-logo">
@@ -87,18 +57,23 @@ const Header = () => {
           </div>
           <div className="hdr-menu hdr-menu-right">
             <ul>
-              {RightMenulist.map((Rightmenu, index2)=>(
-                <li key={index2}><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to={Rightmenu.path}>{Rightmenu.title}</NavLink></li>
-              ))} 
+              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>Spiritual Blogs</NavLink></li>
+              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>ULC Case Law</NavLink></li>
+              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>Campaigns</NavLink></li>
+              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/contact-us'>Contact Us</NavLink></li>
             </ul>
             <div className='mobile-menu'>
               <MenuIcon onClick={()=> setMainMenu(true)} />
               <Drawer open={Mainmenu} onClose={()=> setMainMenu(false)} anchor='right'>
                 <Box sx={{width:250}} onClick={() => setMainMenu(false)}>
                   <ul>
-                    {MobileMenu.map((mobileMenu, mobileKey)=>(
-                      <li key={mobileKey}><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to={mobileMenu.path}>{mobileMenu.title}</NavLink></li>
-                    ))} 
+                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Home</NavLink></li>
+                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>Science is God</NavLink></li>
+                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>History</NavLink></li>
+                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>Spiritual Blogs</NavLink></li>
+                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>ULC Case Law</NavLink></li>
+                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>Campaigns</NavLink></li>
+                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/contact-us'>Contact Us</NavLink></li>
                   </ul>
                 </Box>
               </Drawer>
