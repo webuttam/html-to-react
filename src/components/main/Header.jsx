@@ -43,31 +43,31 @@ const Header = () => {
   const MobileMenu = [
     {
       title:"Home",
-      to: "/"
+      path: "/"
     },
     {
       title: "Science is God",
-      to: "/"
+      path: "/"
     },
     {
       title: "History",
-      to: "/"
+      path: "/"
     },
     {
       title:"Spiritual Blogs",
-      to: "/"
+      path: "/"
     },
     {
       title: "ULC Case Law",
-      to: "/"
+      path: "/"
     },
     {
       title: "Campaigns",
-      to: "/"
+      path: "/"
     },
     {
       title: "Contact Us",
-      to: "/contact"
+      path: "/contact"
     },
   ];
   return (
@@ -78,7 +78,7 @@ const Header = () => {
           <div className="hdr-menu hdr-menu-left">
             <ul>
               {LeftMenulist.map((option, index) =>(
-                  <li key={index}><NavLink className={(e) => {return e.isActive?"menu-active": ""}}>{option.title}</NavLink></li>
+                  <li key={index}><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to={option.path}>{option.title}</NavLink></li>
               ))}
             </ul>
           </div>
@@ -88,7 +88,7 @@ const Header = () => {
           <div className="hdr-menu hdr-menu-right">
             <ul>
               {RightMenulist.map((Rightmenu, index2)=>(
-                <li key={index2}><NavLink className={(e) => {return e.isActive?"menu-active": ""}}>{Rightmenu.title}</NavLink></li>
+                <li key={index2}><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to={Rightmenu.path}>{Rightmenu.title}</NavLink></li>
               ))} 
             </ul>
             <div className='mobile-menu'>
@@ -97,7 +97,7 @@ const Header = () => {
                 <Box sx={{width:250}} onClick={() => setMainMenu(false)}>
                   <ul>
                     {MobileMenu.map((mobileMenu, mobileKey)=>(
-                      <li key={mobileKey}><NavLink className={(e) => {return e.isActive?"menu-active": ""}}>{mobileMenu.title}</NavLink></li>
+                      <li key={mobileKey}><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to={mobileMenu.path}>{mobileMenu.title}</NavLink></li>
                     ))} 
                   </ul>
                 </Box>
