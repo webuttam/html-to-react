@@ -12,7 +12,7 @@ const Header = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <><Home /></>,
+      element: '',
     },
     {
       path: "/",
