@@ -399,7 +399,7 @@ input[type="submit"]{cursor: pointer; border: 0px; outline: none;}
     }
 }
 .site-header{
-	position: absolute;top: 0;left: 0;width: 100%;z-index: 9;background: transparent;padding: 20px 0;
+	position: relative;top: 0;left: 0;width: 100%;z-index: 9;background: transparent;padding: 20px 0;
 }
 .site-header.fixed {
     position: fixed;top: 0;padding: 20px 0;left: 0;width: 100%;background: #000;
@@ -424,6 +424,7 @@ input[type="submit"]{cursor: pointer; border: 0px; outline: none;}
 .hdr-menu ul li{display: inline-block;margin-left: 40px;}
 .hdr-menu ul li:first-child{margin-left: 0;}
 .hdr-menu ul li a{color: #fff;display: block;}
+.hdr-menu ul li:last-child a.menu-active{background: #a67d36;color: #fff;}
 .hdr-menu-right ul li:last-child a{background: #fff;color: #000;padding: 13px 32px;border-radius: 100px;}
 .hdr-menu-right ul li:last-child a:hover{background: #E99D52;color: #fff;}
 /* .hdr-menu {
@@ -682,6 +683,27 @@ input[type="submit"]{cursor: pointer; border: 0px; outline: none;}
 .mobile-search{display: none;}
 .universal-church-btm-content p{color: #d8d8d8;}
 .the-journey, .universal-church, .home-monastery, .home-rectory, .sermons_teachings{overflow: hidden;}
+.form-box {background: #ccaa59;border: 1px solid #a67d36;border-radius: 10px;padding: 50px;}
+.form-box .heading {text-align: center;margin-bottom: 40px;}
+.form-group{margin-bottom: 15px;position: relative;}
+.form-group label {display: block;font-size: 16px;margin-bottom: 5px;}
+.form-group input, .form-group textarea {
+    width: 100%;border-radius: 10px;border: none;padding: 12px 10px 12px 45px;font-size: 15px;color: #000;resize: none;
+}
+.form-group textarea{height: 130px;}
+.form-group input:focus, .form-group textarea:focus{outline: none;box-shadow: none;}
+.form-group svg {
+    color: #ccaa59;position: absolute;margin-top: 13px;font-size: 22px;left: 25px;
+}
+.form-btn button[type="submit"] {
+    color: #ccaa59;border: none;background: #fff;border-radius: 50px;padding: 12px 20px;font-size: 16px;font-weight: 500;
+	-webkit-transition: 0.4s ease-in-out;-o-transition: 0.4s ease-in-out;transition: 0.4s ease-in-out;
+}
+.form-btn button[type="submit"]:hover{background: #333;color: #fff;}
+.form-btn button[type="submit"]:focus{outline: none;box-shadow: none;}
+.form-btn button[type="submit"] svg {margin-left: 25px;}
+
+
 
 @media screen and (min-width:1600px) {
   

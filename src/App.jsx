@@ -35,7 +35,7 @@ function App() {
       element: '',
     },
     {
-      path: "/contact-us",
+      path: "/contact",
       element:<><Header /><Contact /></>,
     },
     
@@ -45,8 +45,6 @@ function App() {
     <>
       <RouterProvider router={router} />
       {/* <Header /> */}
-      <Home />
-      <Contact />
       <Footer />
     </>
   )

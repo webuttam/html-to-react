@@ -22,14 +22,14 @@ const Header = () => {
             </ul>
           </div>
           <div className="hdr-logo">
-            <a title="George Freeman"><img src={Headerlogo} alt="George Freeman" /></a>
+            <a href="/" title="George Freeman"><img src={Headerlogo} alt="George Freeman" /></a>
           </div>
           <div className="hdr-menu hdr-menu-right">
             <ul>
               <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Spiritual Blogs</NavLink></li>
               <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>ULC Case Law</NavLink></li>
               <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Campaigns</NavLink></li>
-              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/contact-us'>Contact Us</NavLink></li>
+              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/contact'>Contact Us</NavLink></li>
             </ul>
             <div className='mobile-menu'>
               <MenuIcon onClick={()=> setMainMenu(true)} />
@@ -42,7 +42,7 @@ const Header = () => {
                     <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Spiritual Blogs</NavLink></li>
                     <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>ULC Case Law</NavLink></li>
                     <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Campaigns</NavLink></li>
-                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/contact-us'>Contact Us</NavLink></li>
+                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/contact'>Contact Us</NavLink></li>
                   </ul>
                 </Box>
               </Drawer>
