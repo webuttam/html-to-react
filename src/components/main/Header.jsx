@@ -1,4 +1,5 @@
-import React , {useState} from 'react'
+import React from 'react'
+import { useState } from 'react'
 import Headerlogo from '../../assets/images/site-logo.png'
 import Drawer from '@mui/material/Drawer'
 import Box from '@mui/material/Box'
@@ -21,7 +22,7 @@ const Header = () => {
             </ul>
           </div>
           <div className="hdr-logo">
-            <a href="#" title="George Freeman"><img src={Headerlogo} alt="George Freeman" /></a>
+            <a title="George Freeman"><img src={Headerlogo} alt="George Freeman" /></a>
           </div>
           <div className="hdr-menu hdr-menu-right">
             <ul>
