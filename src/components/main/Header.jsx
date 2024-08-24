@@ -1,5 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import React, { useState } from 'react'
+import React from 'react'
 import Headerlogo from '../../assets/images/site-logo.png'
 import Drawer from '@mui/material/Drawer'
 import Box from '@mui/material/Box'
@@ -7,42 +6,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import {NavLink} from 'react-router-dom'
 
 
-const Header = () => {
-  const [Mainmenu, setMainMenu] = useState(false)
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: '',
-    },
-    {
-      path: "/",
-      element: '',
-    },
-    {
-      path: "/",
-      element: '',
-    },
-    {
-      path: "/",
-      element: '',
-    },
-    {
-      path: "/",
-      element: '',
-    },
-    {
-      path: "/",
-      element: '',
-    },
-    {
-      path: "/contact-us",
-      element:<Contact />,
-    },
-    
-  ]);
+const Header = () => {  
   return (
     <>
-    <RouterProvider router={router} />
     <header className="site-header">
       <div className="container">
         <div className="d-flex">
