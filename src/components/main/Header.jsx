@@ -16,40 +16,41 @@ const Header = () => {
     },
     {
       path: "/",
-      element: "#",
+      element: '',
     },
     {
       path: "/",
-      element: "#",
+      element: '',
     },
     {
       path: "/",
-      element: "#",
+      element: '',
     },
     {
       path: "/",
-      element: "#",
+      element: '',
     },
     {
       path: "/",
-      element: "#",
+      element: '',
     },
     {
-      path: "/",
+      path: "/contact-us",
       element:<Contact />,
     },
     
   ]);
   return (
     <>
+    <RouterProvider router={router} />
     <header className="site-header">
       <div className="container">
         <div className="d-flex">
           <div className="hdr-menu hdr-menu-left">
             <ul>
               <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Home</NavLink></li>
-              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>Science is God</NavLink></li>
-              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>History</NavLink></li>
+              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Science is God</NavLink></li>
+              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>History</NavLink></li>
             </ul>
           </div>
           <div className="hdr-logo">
@@ -57,9 +58,9 @@ const Header = () => {
           </div>
           <div className="hdr-menu hdr-menu-right">
             <ul>
-              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>Spiritual Blogs</NavLink></li>
-              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>ULC Case Law</NavLink></li>
-              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>Campaigns</NavLink></li>
+              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Spiritual Blogs</NavLink></li>
+              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>ULC Case Law</NavLink></li>
+              <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Campaigns</NavLink></li>
               <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/contact-us'>Contact Us</NavLink></li>
             </ul>
             <div className='mobile-menu'>
@@ -68,11 +69,11 @@ const Header = () => {
                 <Box sx={{width:250}} onClick={() => setMainMenu(false)}>
                   <ul>
                     <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Home</NavLink></li>
-                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>Science is God</NavLink></li>
-                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>History</NavLink></li>
-                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>Spiritual Blogs</NavLink></li>
-                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>ULC Case Law</NavLink></li>
-                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/#'>Campaigns</NavLink></li>
+                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Science is God</NavLink></li>
+                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>History</NavLink></li>
+                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Spiritual Blogs</NavLink></li>
+                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>ULC Case Law</NavLink></li>
+                    <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/'>Campaigns</NavLink></li>
                     <li><NavLink className={(e) => {return e.isActive?"menu-active": ""}} to='/contact-us'>Contact Us</NavLink></li>
                   </ul>
                 </Box>
